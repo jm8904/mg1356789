@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Application Form</title>
+</head>
+<body>
+	<h1 align="center"><i>Application Form</i></h1>
+	<hr>
+	<br><br>
+	<form action="ApplicationServlet" method="post">
+		<b>Enter your First Name:</b> 
+		<input type="text" name="Firstname" placeholder="Enter here">
+		<br> 
+		<b>Enter your Last Name:</b> 
+		<input type="text" name="Lastname" placeholder="Enter here">
+		<br><br> 
+		<b>Gender:</b> 
+		<input type="radio" name="User_Gender" value="Female"> Female <input type="radio" name="User_Gender" value="Male"> Male <br>
+		<br> <b>Qualification: </b>
+		<select name="User_Qual">
+			<option selected="" value="1" disabled="">Select</option>
+			<option value="SSC">SSC</option>
+			<option value="HSC">HSC</option>
+			<option value="Graduate">Graduate</option>
+		</select> <br>
+		<br> <b>Languages: </b> <input type="checkbox" name="Lang"
+			value="Hindi">Hindi <input type="checkbox" name="Lang"
+			value="English">English <input type="checkbox" name="Lang"
+			value="Marathi">Marathi <input type="checkbox" name="Lang">Other<br>
+		<br> <input type="submit" value="Submit"> <input
+			type="Reset" value="Reset">
+</body>
+</html>
